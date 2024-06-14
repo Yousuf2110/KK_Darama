@@ -19,7 +19,7 @@ const renderItem = () => {
 const PopularSection = () => {
   const navigation: any = useNavigation();
   return (
-    <View>
+    <View style={styles.bottomSpace}>
       <View style={styles.container}>
         <Text style={styles.title}>Popular</Text>
         <TouchableOpacity onPress={() => navigation.navigate(SCREEN.PROFILE)}>

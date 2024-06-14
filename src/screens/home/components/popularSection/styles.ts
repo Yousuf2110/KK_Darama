@@ -6,8 +6,11 @@ import {
 } from 'react-native-responsive-screen';
 
 export const styles = StyleSheet.create({
+  bottomSpace: {
+    marginBottom: 5,
+  },
   container: {
-    width: '100%',
+    width: '95%',
     marginVertical: hp(0.5),
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -15,6 +18,7 @@ export const styles = StyleSheet.create({
     borderBottomColor: '#E84D0C',
     alignItems: 'flex-end',
     paddingVertical: hp(0.3),
+    alignSelf: 'center',
   },
   title: {
     fontSize: RFPercentage(2.5),
@@ -33,6 +37,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     height: 100,
     marginRight: wp(5),
+    paddingHorizontal: 10,
   },
   image: {
     height: 100,

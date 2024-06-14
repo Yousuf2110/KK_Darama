@@ -15,13 +15,13 @@ const Home = () => {
       <View style={styles.innerContainer}>
         <TagLine />
         <SearchBar />
-        <ScrollView>
-          <PopularSection />
-          <PopularSection />
-          <PopularSection />
-          <PopularSection />
-        </ScrollView>
       </View>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <PopularSection />
+        <PopularSection />
+        <PopularSection />
+        <PopularSection />
+      </ScrollView>
     </SafeAreaView>
   );
 };

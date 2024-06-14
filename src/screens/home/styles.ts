@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
 
 export const styles = StyleSheet.create({
   container: {
@@ -6,6 +7,6 @@ export const styles = StyleSheet.create({
     backgroundColor: '#212832',
   },
   innerContainer: {
-    paddingHorizontal: 15,
+    paddingHorizontal: wp(3),
   },
 });
