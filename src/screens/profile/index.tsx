@@ -1,11 +1,14 @@
-import {View, Text} from 'react-native';
 import React from 'react';
+import {Text, SafeAreaView} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
+import {styles} from './styles';
 
 const Profile = () => {
+  const navigation: any = useNavigation();
   return (
-    <View>
-      <Text>Profile</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.title}>Watch and enjoy your favorite series</Text>
+    </SafeAreaView>
   );
 };
 
