@@ -21,9 +21,7 @@ const DrawerNavigator = () => {
         },
         headerShown: false,
       }}
-      drawerContent={({navigation}: any) => (
-        <DrawerContent navigation={navigation} />
-      )}>
+      drawerContent={() => <DrawerContent />}>
       <Drawer.Screen name={SCREEN.HOME} component={Home} />
     </Drawer.Navigator>
   );
