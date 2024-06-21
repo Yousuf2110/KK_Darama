@@ -17,7 +17,6 @@ export const styles = StyleSheet.create({
     marginBottom: hp(2),
     alignSelf: 'center',
     paddingHorizontal: wp(3),
-    elevation: 0.9,
   },
   wrapper: {
     width: '40%',

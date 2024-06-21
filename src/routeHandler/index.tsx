@@ -2,7 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Home from '../screens/home';
-import {SCREEN} from '../constants';
+import {SCREEN} from '../constants/screen';
 import Profile from '../screens/profile';
 import DrawerContent from '../components/drawer';
 import {createDrawerNavigator} from '@react-navigation/drawer';
@@ -35,8 +35,12 @@ const RouteHandler = () => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
+          animation: 'slide_from_right',
         }}>
-        <Stack.Screen name={'DrawerNavigator'} component={DrawerNavigator} />
+        <Stack.Screen
+          name={SCREEN.DRAWER_NAVIGATOR}
+          component={DrawerNavigator}
+        />
         <Stack.Screen name={SCREEN.HOME} component={Home} />
         <Stack.Screen name={SCREEN.PROFILE} component={Profile} />
       </Stack.Navigator>

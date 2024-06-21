@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, FlatList, Image, TouchableOpacity} from 'react-native';
 import {styles} from './styles';
 import {data} from '../constants';
-import {SCREEN} from '../../../../constants';
+import {SCREEN} from '../../../../constants/screen';
 import {useNavigation} from '@react-navigation/native';
 
 const renderItem = () => {
