@@ -1,4 +1,5 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {THEME} from '../../constants/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -6,7 +7,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: '#FA5823',
+    color: THEME.RED,
     fontFamily: 'Poppins-Regular',
   },
 });

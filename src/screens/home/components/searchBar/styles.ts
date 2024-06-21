@@ -4,11 +4,12 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
+import {THEME} from '../../../../constants/theme';
 
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
-    backgroundColor: '#393D46',
+    backgroundColor: THEME.INPUT,
     borderRadius: 10,
     paddingVertical: hp(0.4),
     marginVertical: hp(1.5),
@@ -30,7 +31,7 @@ export const styles = StyleSheet.create({
     marginLeft: wp(1),
   },
   input: {
-    color: '#FFFFFF',
+    color: THEME.WHITE,
     fontSize: RFPercentage(2),
     marginLeft: wp(2),
     paddingHorizontal: 10,

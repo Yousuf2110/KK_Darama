@@ -2,6 +2,7 @@ import React from 'react';
 import {View, TextInput} from 'react-native';
 import {styles} from './styles';
 import AntDesign from 'react-native-vector-icons/AntDesign';
+import {THEME} from '../../../../constants/theme';
 
 const SearchBar = () => {
   return (
@@ -9,7 +10,7 @@ const SearchBar = () => {
       <View style={styles.iconContainer}>
         <AntDesign
           name="search1"
-          color={'#ccc'}
+          color={THEME.PLACE_HOLDER}
           size={20}
           style={styles.icon}
         />
@@ -17,7 +18,7 @@ const SearchBar = () => {
       <View style={styles.textInputContainer}>
         <TextInput
           style={styles.input}
-          placeholderTextColor={'#ccc'}
+          placeholderTextColor={THEME.PLACE_HOLDER}
           placeholder={'Which is your favorite series'}
         />
       </View>

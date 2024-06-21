@@ -4,6 +4,7 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
+import {THEME} from '../../../../constants/theme';
 
 export const styles = StyleSheet.create({
   bottomSpace: {
@@ -15,19 +16,19 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     borderBottomWidth: 1,
-    borderBottomColor: '#E84D0C',
+    borderBottomColor: THEME.RED,
     alignItems: 'flex-end',
     paddingVertical: hp(0.3),
     alignSelf: 'center',
   },
   title: {
     fontSize: RFPercentage(2.5),
-    color: '#FFF',
+    color: THEME.WHITE,
     fontFamily: 'Poppins-Medium',
   },
   viewAll: {
     fontSize: RFPercentage(1.8),
-    color: '#E84D0C',
+    color: THEME.RED,
     fontFamily: 'Poppins-Regular',
   },
   popSection: {

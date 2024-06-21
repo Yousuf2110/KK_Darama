@@ -4,6 +4,7 @@ import {
   heightPercentageToDP as hp,
   widthPercentageToDP as wp,
 } from 'react-native-responsive-screen';
+import {THEME} from '../../../../constants/theme';
 
 export const styles = StyleSheet.create({
   container: {
@@ -13,7 +14,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: '#808080',
+    borderBottomColor: THEME.GRAY,
     marginBottom: hp(2),
     alignSelf: 'center',
     paddingHorizontal: wp(3),
@@ -27,14 +28,14 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontSize: RFPercentage(3.8),
-    color: '#E84D0C',
+    color: THEME.RED,
     fontFamily: 'Poppins-SemiBold',
     marginTop: hp(0.6),
     left: wp(3),
   },
   text: {
     fontSize: RFPercentage(3.8),
-    color: '#FFF',
+    color: THEME.WHITE,
     fontFamily: 'Poppins-SemiBold',
   },
 });
